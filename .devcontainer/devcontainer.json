@@ -1,0 +1,17 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-extra/features/starship:1": {},
+		"ghcr.io/devcontainers-extra/features/apt-packages:1": {
+			"packages": "vim,parallel"
+		}
+	},
+	"postCreateCommand": {
+		"Initialize Starship (Bash)": "echo 'eval $(starship init bash)' >> ~/.bashrc",
+		"Configure Starship Prompt": "echo '[directory]\nread_only = \"\"\n' >> ~/.config/starship.toml"
+	}
+}

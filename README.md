@@ -35,7 +35,7 @@ The following software components will need to be developed to achieve the writi
 
 ### Review
 
--   Webhook (bot)
+-   GitHub App (bot with webhook integration)
 -   GitHub Actions
 -   GitHub Workflows
 
